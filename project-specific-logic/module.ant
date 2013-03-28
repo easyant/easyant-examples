@@ -1,0 +1,6 @@
+<project name="my-custom-stuff">
+    <echo>This message will be printed at startup </echo>
+    <target name="hello">
+        <echo>Hello world printed from our custom hello target</echo>
+    </target>
+</project>
