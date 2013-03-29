@@ -7,7 +7,7 @@
         <echo>Hello world executed after package-jar:jar target</echo>
     </target>
 
-    <target name="hello" depends="compile">
+    <target name="hello3" depends="compile">
         <echo>hello world displayed when compile extension point is reached</echo>
     </target>
 </project>
