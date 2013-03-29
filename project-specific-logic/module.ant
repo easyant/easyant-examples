@@ -3,8 +3,8 @@
     <target name="hello">
         <echo>Hello world printed from our custom hello target</echo>
     </target>
-    <target name="hello2" depends="package-war:war">
-        <echo>Hello world executed after package-war:war target</echo>
+    <target name="hello2" depends="package-jar:jar">
+        <echo>Hello world executed after package-jar:jar target</echo>
     </target>
 
     <target name="hello" depends="compile">
