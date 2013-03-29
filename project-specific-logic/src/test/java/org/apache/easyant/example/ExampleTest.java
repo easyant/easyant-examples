@@ -19,20 +19,15 @@ package org.apache.easyant.example;
 
 import java.util.Properties;
 
-import org.testng.Assert;
-import org.testng.annotations.Test;
+import junit.framework.TestCase;
 
-public class ExampleTest {
-    
-    @Test
+public class ExampleTest extends TestCase {
     public void testExample() throws Exception {
-        Assert.assertEquals("Hello EasyAnt!", new Example().sayHello("EasyAnt"));
+        assertEquals("Hello EasyAnt!", new Example().sayHello("EasyAnt"));
     }
-
-    @Test
     public void testTestResources() throws Exception {
         Properties props = new Properties();
         props.load(Example.class.getResourceAsStream("/test.properties"));
-        Assert.assertEquals("Hello Test", props.getProperty("test.example"));
+        assertEquals("Hello Test", props.getProperty("test.example"));
     }
 }
