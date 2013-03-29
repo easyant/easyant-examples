@@ -1,13 +1,21 @@
-<project name="my-custom-stuff">
+<project name="my-custom-stuff" xmlns:ivy="antlib:org.apache.ivy.ant"
+        xmlns:ea="antlib:org.apache.easyant">
     <echo>This message will be printed at startup </echo>
+
     <target name="hello">
         <echo>Hello world printed from our custom hello target</echo>
     </target>
+
     <target name="hello2" depends="package-jar:jar">
         <echo>Hello world executed after package-jar:jar target</echo>
     </target>
 
-    <target name="hello3" depends="compile">
+    <target name="hello3" extensionOf="compile">
         <echo>hello world displayed when compile extension point is reached</echo>
+    </target>
+
+    <target name="cobertura:init">
+        <ivy:cachepath pathid="cobertura.classpath" inline="true" organisation="net.sourceforge.cobertura" module="cobertura" revision="1.9.4.1" conf="default" settingsRef="easyant.ivy.instance"/>
+        <taskdef classpathref="cobertura.classpath" resource="tasks.properties" />
     </target>
 </project>
