@@ -39,4 +39,8 @@
             <fileset dir="${coverage.dir}"/>
         </ea:path>
     </target>
+
+    <target name="cobertura:run" depends="cobertura:instrument">
+        <cobertura-report format="html" destdir="${target.report.dir}" srcdir="${src.main.java}" datafile="${coverage.datafile}"/>
+    </target>
 </project>
