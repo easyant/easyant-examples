@@ -19,6 +19,7 @@
         <description>
             This example show you how to use a meta build orchestrator to manage several submodules
         </description>
+	<!-- plugins declared here will not be inherited by default by submodules -->
         <ea:build module="meta-build" revision="0.9"/>
         <ea:plugin module="sonar" revision="0.9"/>
     </info>
