@@ -15,6 +15,6 @@ Configuration can be adapted through properties by adding the this to module.ivy
 
 Alternatively if you have a few property to set you can set it as attribute in plugin declaration
 
-<ea:plugin module="sonar" revision="0.9" aproperty="myvalue"/>
+<ea:plugin module="sonar" revision="1.0" aproperty="myvalue"/>
 
 see sonar documentation to see exhaustive list of properties http://docs.codehaus.org/display/SONAR/Analysis+Parameters

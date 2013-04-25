@@ -21,6 +21,6 @@
         </description>
 	<!-- plugins declared here will not be inherited by default by submodules -->
         <ea:build module="meta-build" revision="0.9"/>
-        <ea:plugin module="sonar" revision="0.9"/>
+        <ea:plugin module="sonar" revision="1.0"/>
     </info>
 </ivy-module>

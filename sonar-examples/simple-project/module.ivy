@@ -18,7 +18,7 @@
     <info organisation="my.company" module="simple-project" 
             status="integration" revision="0.1">
         <ea:build organisation="org.apache.easyant.buildtypes" module="build-std-java" revision="0.9"/>
-        <ea:plugin module="sonar" revision="0.9"/>
+        <ea:plugin module="sonar" revision="1.0"/>
     </info>
     <configurations>
         <conf name="default" visibility="public" description="runtime dependencies artifact can be used with this conf"/>
